@@ -4,7 +4,6 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-clinical:entry-pages
 
 meteor-platform
 awatson1978:fonts-helveticas
@@ -19,18 +18,19 @@ clinical:barcode
 clinical:env
 clinical:hipaa
 clinical:extended-api
-clinical:users-edit
-clinical:users-image-grid
-clinical:users-new
-clinical:users-table
-clinical:users-list
-clinical:users-preview
-clinical:active-form-upsert
-#clinical:users-upsert
+
+photonic:active-entry-pages
+photonic:active-users-edit
+photonic:active-users-imagegrid
+photonic:active-users-new
+photonic:active-users-table
+photonic:active-users-list
+photonic:active-users-preview
+photonic:active-form-upsert
+photonic:active-users-upsert
 
 
 starrynight:glass-ui
-
 
 gadicohen:prism
 rahul:animate-everything

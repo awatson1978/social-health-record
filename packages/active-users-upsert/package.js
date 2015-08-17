@@ -1,5 +1,5 @@
 Package.describe({
-  name:'clinical:users-upsert',
+  name:'photonic:active-users-upsert',
   version: '0.0.1',
   sumary: '',
   git: '',

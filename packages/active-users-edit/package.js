@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'clinical:users-image-grid',
+  name: 'photonic:active-users-edit',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -17,15 +17,15 @@ Package.onUse( function (api) {
   api.use('iron:router');
   api.use('less');
 
-  api.addFiles('components/userImageGridPage/userImageGridPage.html', ['client']);
-  api.addFiles('components/userImageGridPage/userImageGridPage.js', ['client']);
-  api.addFiles('components/userImageGridPage/userImageGridPage.less', ['client']);
+  api.addFiles('components/userEditPage/userEditPage.html', ['client']);
+  api.addFiles('components/userEditPage/userEditPage.js', ['client']);
+  api.addFiles('components/userEditPage/userEditPage.less', ['client']);
 
-  api.export('userImageGridPage');
+  api.export('userEditPage');
 });
 
 Package.onTest( function (api) {
   api.use('tinytest');
-  api.use('clinical:users-image-grid');
-  api.addFiles('users-image-grid-tests.js');
+  api.use('clinical:users-edit');
+  api.addFiles('users-edit-tests.js');
 });

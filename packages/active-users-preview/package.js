@@ -1,5 +1,5 @@
 Package.describe({
-  name:'clinical:users-preview',
+  name:'photonic:active-users-preview',
   version: '0.0.1',
   sumary: '',
   git: '',
