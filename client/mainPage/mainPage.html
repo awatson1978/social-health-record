@@ -1,0 +1,65 @@
+<template name="mainPage">
+  <div id="mainPage" class="page">
+
+
+    <hr>
+    <h2 class="fullwidth centered">ActiveEntry & ActiveUser</h2>
+    <p>
+      A drop-in user accounts system for <a href="http://www.meteor.com">Meteor</a> applicaions built using the <a href="http://clinincal.meteor.com">Clinical Meteor Track</a>.  Designed to provide a Day Made of Glass style user interface, using the <a href="https://atmospherejs.com/?q=photonic">Photonic UI</a>.
+    </p>
+    <button id="signInButton" class="btn-primary btn-main">Sign In</button><br><br>
+    <button id="signUpButton" class="btn-primary btn-main">Sign Up</button><br><br>
+    <button id="usersListButton" class="btn-primary btn-main">Users List</button>
+
+    <br><br>
+
+    <hr>
+    <h4 class="fullwidth centered">Installation</h4>
+    <p>
+      The ActiveRecord package is a meta-package comprised of a number of sub-packages.  The easiest way to install it is to:
+    </p>
+    {{#prism language="bash"}}
+      meteor add photonic:active-entry
+      meteor add photonic:active-user
+    {{/prism}}
+
+
+
+
+
+
+    <hr>
+    <h4 class="fullwidth centered">Contributing/Developing</h4>
+    <p>
+      Download the reference app, fork the repository, and tinker with the underlying packages.
+    </p>
+    {{#prism language="bash"}}
+      git clone http://github.com/awatson1978/active-record-demo
+      cd active-record-demo
+      meteor
+    {{/prism}}
+
+    <hr>
+    <h4>Design Inspiration</h4>
+    <p>
+      The general design aesthetic of the Glass UI and this ActiveRecord pattern is inspired by the Corning Day Made of Glass video.  We're not implementing the UI exactly as shown in the video; but we find it a useful tool in create a shared vision regarding Card UI and establishing a design language around haptic interfaces, complex animations, near-field communications between devices, and other advanced design concepts.
+    </p>
+    <iframe width="100%" height="315" src="//www.youtube.com/embed/jZkHpNnXLB0" frameborder="0" allowfullscreen></iframe>
+
+
+    <hr>
+    <h4>Licensing</h4>
+    <p>
+      Code is MIT.  Use as you will.
+    </p>
+    <p>
+      Corning Day Made of Glass video is copyright Corning; all rights reserved.
+    </p>
+
+
+
+
+
+
+  </div>
+</template>

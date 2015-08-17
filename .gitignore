@@ -1,0 +1,11 @@
+.meteor/local/build
+.meteor/local
+
+logs
+logs/*
+
+screenshots
+screenshots/*
+
+reports
+reports/*
