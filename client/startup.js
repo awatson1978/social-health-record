@@ -16,10 +16,10 @@ Meteor.startup(function(){
     },
     signIn: {
       displayFullName: true,
-      destination: "table/users"
+      destination: "/table/users"
     },
     signUp: {
-      destination: "table/users"
+      destination: "/table/users"
     },
     themeColors: {
       primary: ""

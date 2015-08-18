@@ -1,5 +1,70 @@
 // // add tests to this file using the Nightwatch.js API
 // // http://nightwatchjs.org/api
+
+// add tests to this file using the Nightwatch.js API
+// http://nightwatchjs.org/api
+
+module.exports = {
+  tags: ["accounts", "janedoe", "signUp", "signIn", "entry"],
+  before: function (client) {
+    // this depends on the accounts-housemd package
+    client
+      .url('http://localhost:3000')
+      .meteorCall('removeAllUsers', false, false)
+      .pause(1000);
+  },
+  "A. Sign In (Failure)": function (client) {
+    client
+      .url("http://localhost:3000")
+      .resizeWindow(768, 1024)
+      //.resizeWindow(375, 667)
+
+    .waitForPage("#entrySignIn")
+      .saveScreenshot("tests/nightwatch/screenshots/iphone/accountsEntry/A-signInPage.png")
+      .reviewSignIn()
+      .signIn("janedoe@pentasyllabic.com", "janedoe123").pause(300)
+
+    .verify.containsText("#signInToAppButton", "USER NOT FOUND").pause(500)
+      .saveScreenshot("tests/nightwatch/screenshots/iphone/accountsEntry/A1-signInPage.png")
+
+    .click("#needAnAccountButton").pause(1000);
+
+  },
+  "B. Sign Up Page": function (client) {
+    client
+      .verify.elementPresent("#entrySignUp")
+      .saveScreenshot("tests/nightwatch/screenshots/iphone/accountsEntry/B-signUpPage.png")
+
+    .reviewSignUp()
+      .signUp("janedoe@pentasyllabic.com", "janedoe123", "Jane Doe").pause(1000)
+
+    // .verify.elementPresent("#signUpPageJoinNowButton")
+    // .click("#signUpPageJoinNowButton").pause(1000);
+  },
+  "C. Home Page": function (client) {
+    client
+      .verify.elementPresent("#usersTablePage")
+      .saveScreenshot("tests/nightwatch/screenshots/iphone/accountsEntry/C-homePage.png")
+  },
+  "D. Logout": function (client) {
+    client
+      .meteorLogout()
+      // .verify.elementPresent("#entrySignIn")
+  },
+  "E. Sign In (Success)": function (client) {
+    client
+      .url("http://localhost:3000/entrySignIn")
+      .verify.elementPresent("#entrySignIn")
+      .saveScreenshot("tests/nightwatch/screenshots/iphone/accountsEntry/C-homePage.png")
+
+      .signIn("janedoe@pentasyllabic.com", "janedoe123").pause(500)
+      .verify.elementPresent("#usersTablePage")
+
+    .end();
+  }
+};
+
+
 //
 //
 //
