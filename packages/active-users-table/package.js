@@ -15,12 +15,13 @@ Package.onUse( function ( api ) {
   api.addFiles('components/usersTablePage/usersTablePage.html', ['client']);
   api.addFiles('components/usersTablePage/usersTablePage.js', ['client']);
   api.addFiles('components/usersTablePage/usersTablePage.less', ['client']);
+  api.addFiles('components/usersTablePage/jquery.tablesorter.js', ['client']);
 
   api.export('usersTablePage');
 });
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('clinical:users-table');
+  api.use('photonic:active-users-table');
   api.addFiles('users-table-tests.js');
 });

@@ -21,6 +21,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('clinical:users-upsert');
+  api.use('photonic:active-users-upsert');
   api.addFiles('users-upsert-tests.js');
 });

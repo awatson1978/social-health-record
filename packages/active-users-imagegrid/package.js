@@ -26,6 +26,6 @@ Package.onUse( function (api) {
 
 Package.onTest( function (api) {
   api.use('tinytest');
-  api.use('clinical:users-image-grid');
+  api.use('photonic:active-users-imagegrid');
   api.addFiles('users-image-grid-tests.js');
 });

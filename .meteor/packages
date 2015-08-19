@@ -19,7 +19,7 @@ clinical:env
 clinical:hipaa
 clinical:extended-api
 
-photonic:active-entry-pages
+photonic:active-entry
 photonic:active-users-edit
 photonic:active-users-imagegrid
 photonic:active-users-new

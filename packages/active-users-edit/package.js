@@ -26,6 +26,6 @@ Package.onUse( function (api) {
 
 Package.onTest( function (api) {
   api.use('tinytest');
-  api.use('clinical:users-edit');
+  api.use('photonic:active-users-edit');
   api.addFiles('users-edit-tests.js');
 });

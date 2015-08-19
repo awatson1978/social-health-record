@@ -1,5 +1,5 @@
 Package.describe({
-  name:'clinical:active-form-upsert',
+  name:'photonic:active-form-upsert',
   version: '0.0.1',
   sumary: '',
   git: '',
@@ -25,6 +25,6 @@ Package.onUse( function ( api ) {
 
 Package.onTest( function ( api ) {
   api.use('tinytest');
-  api.use('clinical:users-upsert');
+  api.use('photonic:active-form-upsert');
   api.addFiles('users-upsert-tests.js');
 });

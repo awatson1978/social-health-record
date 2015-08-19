@@ -74,7 +74,7 @@ npm-bcrypt@0.7.8_2
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 perak:markdown@1.0.5
-photonic:active-entry-pages@0.2.0
+photonic:active-entry@0.2.0
 photonic:active-form-upsert@0.0.1
 photonic:active-users-edit@0.0.1
 photonic:active-users-imagegrid@0.0.1

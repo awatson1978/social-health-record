@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'clinical:active-layout',
+  name: 'photonic:active-layout',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: '',
@@ -17,6 +17,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('clinical:active-layout');
+  api.use('photonic:active-layout');
   api.addFiles('active-layout-tests.js');
 });
