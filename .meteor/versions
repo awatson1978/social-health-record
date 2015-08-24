@@ -82,7 +82,6 @@ photonic:active-users-list@0.0.1
 photonic:active-users-new@0.0.1
 photonic:active-users-preview@0.0.1
 photonic:active-users-table@0.0.1
-photonic:active-users-upsert@0.0.1
 rahul:animate-everything@1.0.1
 random@1.0.3
 reactive-dict@1.1.0

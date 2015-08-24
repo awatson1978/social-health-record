@@ -27,7 +27,7 @@ photonic:active-users-table
 photonic:active-users-list
 photonic:active-users-preview
 photonic:active-form-upsert
-photonic:active-users-upsert
+#photonic:active-users-upsert
 
 
 starrynight:glass-ui
