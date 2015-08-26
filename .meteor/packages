@@ -29,6 +29,12 @@ photonic:active-users-preview
 photonic:active-form-upsert
 #photonic:active-users-upsert
 
+statuses
+#statuses-core
+#statuses-footer
+#statuses-header
+#statuses-list
+#statuses-upsert
 
 starrynight:glass-ui
 

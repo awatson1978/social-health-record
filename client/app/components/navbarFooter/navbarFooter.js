@@ -1,4 +1,7 @@
 Template.navbarFooter.events({
+  'click #lifeLogBtn': function () {
+    Router.go('/list/statuses');    
+  },
   "click #infoBtn": function (event, template) {
     Router.go('/info');
   },
